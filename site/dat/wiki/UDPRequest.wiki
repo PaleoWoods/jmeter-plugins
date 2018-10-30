@@ -1,5 +1,6 @@
-<div style="float: right" class="plugins_set extras_set">Available in [ExtrasSet Extras Set]</div>
-= UDP Request <sup><font color=gray size="1">since 0.4.1</font></sup>=
+= UDP Request =
+
+<span class=''>[/?search=jpgc-udp <i class='fa fa-download'></i> Download]</span>
 
 This plugin adds [http://en.wikipedia.org/wiki/User_Datagram_Protocol UDP] protocol support to JMeter.
 With this plugin you can load test DNS, NTP, TFTP, Boot servers and many-many other systems.
@@ -8,6 +9,10 @@ Since UDP may be used both in one-way and two-way communications, there is optio
 to wait for response and corresponding timeout setting.
 
 [/img/wiki/UDPRequest.png]
+
+"Close UDP Socket" - the flag to close socket after processing request. Otherwise, the socket will stay open for the next iteration.
+
+"Bind Local Address/Port" - the options to manually choose which local IP and port should be used to send the request.
 
 == Encode/Decode Class ==
 

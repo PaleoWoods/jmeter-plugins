@@ -1,5 +1,6 @@
-<div style="float: right" class="plugins_set extraslibs_set">Available in [ExtrasWithLibsSet Extras With Libs Set]</div>
-= JSON to XML Converter<sup><font color=gray size="1"> since 1.0.0</font></sup>=
+= JSON to XML Converter =
+
+<span class=''>[/?search=jpgc-json <i class='fa fa-download'></i> Download]</span>
 
 <i>This plugin was originally developed by [http://www.atlantbh.com/ Atlantbh d.o.o.], 
 released as [https://github.com/ATLANTBH/jmeter-components jmeter-components], 

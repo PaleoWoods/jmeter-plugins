@@ -1,9 +1,16 @@
-<div style="float: right" class="plugins_set standard_set">Available in [StandardSet Standard Set]</div>
-= Stepping Thread Group <sup><font color=gray size="1">since 0.2.0</font></sup>=
+= Stepping Thread Group =
+
+<div class="alert alert-danger">
+This plugin is deprecated and should not be used. Use [ConcurrencyThreadGroup Concurrency Thread Group] instead.
+</div>
+
+<span class=''>[/?search=jpgc-casutg <i class='fa fa-download'></i> Download]</span>
 
 JMeter have only one out-of-the-box option for threads (users) scheduling: simple ramp-up. But many users, especially with [http://en.wikipedia.org/wiki/HP_LoadRunner HP LoadRunner] experience miss more flexible thread scheduling algorythm. Stepping Thread Group adds to JMeter thread scheduling similar to [http://en.wikipedia.org/wiki/HP_LoadRunner LoadRunner]'s.
 
 In JMeter version 2.4 new plugin type was introduced: custom Thread Groups. Stepping Thread Group is the first custom thread group in the world.
+
+However, time goes by and probably better alternative has been offered: [ConcurrencyThreadGroup Concurrency Thread Group]
 
 == Features ==
   * preview graph showing estimated load (see example screen below)
@@ -26,4 +33,5 @@ Actual test run shows following activity graph:
 
 == See Also ==
 
+  # [ConcurrencyThreadGroup Concurrency Thread Group] for possible replacement
   # [UltimateThreadGroup Ultimate Thread Group] for freeform load profiles

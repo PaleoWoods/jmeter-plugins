@@ -1,12 +1,9 @@
-<div style="float: right" class="plugins_set extras_set">Available in [ExtrasSet Extras Set]</div>
-= Response Codes per Second <sup><font color=gray size="1">since 0.4.0</font></sup>=
+= Response Codes per Second =
+
+<span class=''>[/?search=jpgc-graphs-additional <i class='fa fa-download'></i> Download]</span>
 
 This graph will display the response code per second returned during the test.
 
 == Sample result ==
 
 [/img/wiki/response_codes_per_second.png]
-
-== Online Version for This Graph ==
-
-There is online version for this graph on [https://sense.blazemeter.com/?utm_source=jpgc&utm_medium=wiki&utm_campaign=RCOT BM.Sense] service, see example [https://sense.blazemeter.com/examples/46707/?utm_source=jpgc&utm_medium=wiki&utm_campaign=RCOT#tab=2&zoom=5 here].

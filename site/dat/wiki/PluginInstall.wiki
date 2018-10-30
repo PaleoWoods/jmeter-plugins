@@ -1,19 +1,16 @@
-= Installing Plugins =
+= Installing Plugins Manager =
 
-<font color='red'>*You need to run JMeter 2.12 or above with a Java 7 or above to use the plugins.*</font>
+The easiest way to get the plugins is to install [/wiki/PluginsManager/ Plugins Manager]. Then you'll be able to install any other plugins just by clicking chekbox.
 
-  # Go to [/downloads/#Latest-Stable-Release downloads page]
-  # Choose the plugins set according to your tasks (or get all of them if you want to explore all existing plugins)
-  # Extract archive contents to JMeter installation directory
-  # Restart JMeter to load new plugins
-
-You can find JMeter installation directory as the upper directory of {{{bin}}}, where jmeter start scripts are located. Make sure it contains {{{lib}}} and {{{lib/ext}}} directories.
+<div class="alert alert-success">
+Download *[/get/ plugins-manager.jar]* and put it into {{{lib/ext}}} directory, then restart JMeter.
+</div>
 
 If you experience any issues with plugins installation, don't hesitate to ask at [/support/ Support Forums].
 
 == PerfMon Agent ==
 
-ServerAgent does not required to be installed into JMeter directory. You should install and launch it on the target server instead. See [PerfMonAgent] wiki page for details.
+ServerAgent does not required to be installed into JMeter directory. You should install and launch it on the target server instead. See [https://github.com/undera/perfmon-agent/blob/master/README.md server agent] wiki page for details.
 
 = Configure JMeter =
 
@@ -77,11 +74,15 @@ meterPlugin.drawLineMarker=false
 
 This is not mandatory, only if you want to change the default behaviors. The options drawGradient, neverDrawFinalZeroingLines, neverDrawCurrentX  and useRelativeTime can also be dynamically changed with the [SettingsPanel#Tuning_the_Graphs_Plugins Settings Panel].
 
+= Old-Style Plugin Sets =
+
+If you look for old-style plugin sets up to version 1.4.0, find them [/downloads/old/ here].
+
 = Installing Versions Before 1.1.1 =
 JMeter-Plugins versionы  before 1.1.1 were shipped via three distribution ZIPs:
   # JMeterPlugins-x.x.x.zip - contains plugins, must be unpacked into _lib/ext_ directory inside JMeter
   # JMeterPlugins-libs-x.x.x.zip - contains additional JARs used by JSON/HBase/Hadoop/etc plugins, must be upnacked into _lib_ directory inside JMeter
-  # ServerAgent-x.x.x.zip - contains [PerfMonAgent server resource monitoring agent] to use with [PerfMon PerfMon Metrics Collector] plugin, standalone utility
+  # ServerAgent-x.x.x.zip - contains [https://github.com/undera/perfmon-agent/blob/master/README.md server resource monitoring agent] to use with [PerfMon PerfMon Metrics Collector] plugin, standalone utility
 
 = Installing Versions Before 1.0.0 =
 

@@ -1,5 +1,6 @@
-<div style="float: right" class="plugins_set extras_set">Available in [ExtrasSet Extras Set]</div>
-= Variables From CSV File <sup><font color=gray size="1">since 0.2.1</font></sup>=
+= Variables From CSV File =
+
+<span class=''>[/?search=jpgc-csvars <i class='fa fa-download'></i> Download]</span>
 
 This Config item allows you to load variable values from CSV file. Variable names and values taken from CSV file, name from first column, value from second column, respectively.
 

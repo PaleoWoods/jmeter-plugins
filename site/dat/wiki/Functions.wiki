@@ -1,5 +1,6 @@
-<div style="float: right" class="plugins_set standard_set">Available in [StandardSet Standard Set]</div>
 = Custom JMeter Functions =
+
+<span class=''>[/?search=jpgc-functions <i class='fa fa-download'></i> Download]</span>
 
 In addition to standard [http://jakarta.apache.org/jmeter/usermanual/functions.html JMeter functions] we provide:
 
@@ -214,4 +215,29 @@ Example, gettig different values for jmeter variable:
 ${__if(${size}, 5, ok, invalid)}
 }}}
 
+== caseFormat<sup><font color=gray size="1">since 2.0</font></sup> ==
 
+This function provides changing string case format.
+
+Parameters:
+  # Original string value  - required
+  # Expected case mode (case insenstive), Default is LOWER_CAMEL_CASE (if not valid mode will return string as is)     
+  # Optional variable to store result
+
+Example, save in myString Variable value "my-string"
+
+${__caseFormat("my String", "LOWER_HYPHEN", myString);
+
+Case modes available:
+
+1. LOWER_CAMEL_CASE - Lower camel case, output as: lowerCamelCase 
+
+2. UPPER_CAMEL_CASE - Upper camel case, output as: UpperCamelCase 
+
+3. SNAKE_CASE/LOWER_UNDERSCORE Snake or lower underscore case, output as: snake_lower_underscore_case
+
+4. KEBAB_CASE/LISP_CASE/SPINAL_CASE/LOWER_HYPHEN - Lisp or kebab or spinal or lower hyphen case, output as: lis-keba-spinal-lower-case
+
+5. TRAIN_CASE - Train case, output as: TRAIN-CASE
+
+6. UPPER_UNDERSCORE - Upper underscore case, output as: UPPER_UNDERSCORE_CASE
